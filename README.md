@@ -7,7 +7,7 @@ A Unity-based neuro-rehabilitation system designed to improve upper-limb motor c
 ## 🖼️ Project UI Preview
 👉 (Attach Image 1 – UI/UX Interface)
 
-![UI/UX Interface](path/to/image1.png)
+![UI/UX Interface](Images/Screenshot 2026-02-23 181322.png)
 
 ---
 
@@ -126,18 +126,6 @@ If **PFF < 70**, next cue level activates:
    /HandTracking
 ```
 
----
-
-## 🚀 How to Run the Project
-
-1. Clone/download the repository  
-2. Open in **Unity 2021+**  
-3. Connect Intel RealSense camera  
-4. Run the **Calibration Scene**  
-5. Start from **Level 1**  
-
----
-
 ## 🧩 Requirements
 
 - Unity **2021 or newer**  
@@ -156,6 +144,6 @@ If **PFF < 70**, next cue level activates:
 
 ---
 
-## ✍️ Author
+## Developer
 
 **Akash Singh**
