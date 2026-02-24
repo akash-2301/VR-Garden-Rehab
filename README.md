@@ -1,91 +1,161 @@
-Project Title:
-Garden Rehab – Upper Limb Rehabilitation Game
+# 🌿 Garden Rehab – Upper Limb Rehabilitation Game
 
-Overview:
-Garden Rehab is a Unity-based rehabilitation game designed for stroke patients with upper-limb motor deficits. The game uses Intel RealSense hand-tracking and includes multiple therapy stages, scoring logic, and performance evaluation.
+A Unity-based neuro-rehabilitation system designed to improve upper-limb motor control using Intel RealSense hand tracking.
 
-Key Features:
+---
 
-Hand tracking using Intel RealSense
+## 🖼️ Project UI Preview
+👉 (Attach Image 1 – UI/UX Interface)
 
-12-stage rehab gameplay with increasing difficulty
+![UI/UX Interface](path/to/image1.png)
 
-Object picking mechanics (apple, mango, sunflower, rose)
+---
 
-Bee distraction logic
+## 📌 Overview
 
-60-second timer per stage
+**Garden Rehab** is a serious-game rehabilitation system built in Unity for stroke patients with upper-limb motor impairment.  
+It integrates RealSense-based hand tracking, multi-stage therapy tasks, adaptive cues, and performance-based scoring to support motor recovery and engagement.
 
-Scoring, penalties, and performance factor
+---
 
-Three-attempt guidance system (no cue → outline → arrow)
+## ✨ Key Features
 
-Google Form data logging
+- 🎮 **12 rehab stages** with progressive difficulty  
+- ✋ **Intel RealSense hand tracking** (D435/D455)  
+- 🍎 **Object-picking gameplay** (apple, mango, sunflower, rose)  
+- 🐝 **Bee distraction mechanic**  
+- ⏱️ **60-second timer** per stage  
+- 🧮 **Scoring, penalties & performance factor**  
+- 🎯 **Three-attempt adaptive cueing:**  
+  - Attempt 1 → No cue  
+  - Attempt 2 → Outline  
+  - Attempt 3 → Arrow + bloom  
+- 📊 **Google Form data logging** for performance analysis  
 
-How Calibration Works:
+---
 
-One-time hand calibration done using 4 reference points
+## ✋ How Calibration Works
+👉 (Attach Image 2 – Hand Calibration)
 
-Captured RealSense coordinates mapped to Unity screen space
+![Hand Calibration](path/to/image2.png)
 
-Mapping reused across all levels without repeating calibration
+Calibration is done once using four hand positions:
 
-Gameplay Summary:
+1. Right  
+2. Up-Right (Diagonal)  
+3. Up  
+4. Down  
 
-Relevant objects enabled per stage
+These RealSense points are mapped to Unity’s screen space to determine personalized movement boundaries.
 
-User picks the correct objects
+### ✔️ Calibration Advantages  
+- Saved one time  
+- Reused across all levels  
+- No repeated calibration required  
 
-Wrong object or exceeding limit gives penalty
+---
 
-Stage ends when timer finishes or all valid objects are collected
+## 🎮 Gameplay Summary
+👉 (Attach Image 3 – Stages Showcase)
 
-Performance Factor and PFF determine whether guidance cues appear
+![Stages](path/to/image3.png)
 
-Performance Factor (PF):
+Each stage activates certain objects. The user must pick only the correct ones.
 
-If timerRemaining ≥ 1 → PF = 100%
+### ✔️ Correct Mechanics
 
-Otherwise PF = score / maxScore (maxScore = total valid objects without bees)
+- Correct object → **+Score**  
+- Wrong object → **Penalty**  
+- Exceeding allowed limit → **Penalty + red-circle alert**  
 
-PFF Calculation:
+### ✔️ Stage Ends When:
+- Timer finishes **OR**  
+- All valid (bee-free) objects are collected  
+
+---
+
+## 🐝 Stages With Bee Constraints
+👉 (Attach Image 4 – Bee Constraint Stages)
+
+![Bee Stages](path/to/image4.png)
+
+Bees sit on specific objects to block selection.
+
+- Objects with bees **cannot be picked**  
+- These are excluded from scoring  
+- Adds cognitive + motor inhibition challenge  
+
+---
+
+## 🧠 Performance Factor Logic
+
+### **1️⃣ Performance Factor (PF)**  
+
+- If **timerRemaining ≥ 1 sec** → PF = **100%**  
+- Else:  
+  ```
+  PF = score / maxScore
+  ```
+where  
+**maxScore = total valid objects without bees**
+
+---
+
+### **2️⃣ Weighted PFF Calculation**
+```
 PFF = 0.2(PF1) + 0.3(PF2) + 0.5(PF3)
+```
 
-Folder Structure (Short):
-/Assets/Scripts
-/Assets/Prefabs
-/Assets/Scenes
-/Assets/HandTracking
+---
 
-How to Run the Project:
+### **3️⃣ Cue Trigger Logic**
 
-Clone or download this project
+If **PFF < 70**, next cue level activates:
 
-Open it in Unity
+- No cue → Outline → Arrow  
 
-Connect the RealSense camera
+---
 
-Run Calibration Scene
+## 📁 Folder Structure (Brief)
 
-Start Level 1
+```
+/Assets
+   /Scripts
+   /Scenes
+   /Prefabs
+   /HandTracking
+```
 
-Requirements:
+---
 
-Unity 2021 or above
+## 🚀 How to Run the Project
 
-Intel RealSense SDK
+1. Clone/download the repository  
+2. Open in **Unity 2021+**  
+3. Connect Intel RealSense camera  
+4. Run the **Calibration Scene**  
+5. Start from **Level 1**  
 
-RealSense camera (D435/D455)
+---
 
-Windows 10/11
+## 🧩 Requirements
 
-Testing Notes:
+- Unity **2021 or newer**  
+- Intel RealSense **SDK**  
+- RealSense **D435 / D455** camera  
+- Windows **10/11**  
 
-Game can be tested on healthy individuals
+---
 
-Difficulty auto-adjusts based on performance
+## 🧪 Testing Notes
 
-Cue assistance appears only in later attempts
+- Can be tested with healthy participants  
+- Difficulty adapts automatically  
+- Cue assistance appears only in later attempts  
+- Intended for clinical + home-based rehabilitation  
 
-Author:
-Akash
+---
+
+## ✍️ Author
+
+**Akash Singh**
