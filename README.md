@@ -5,9 +5,8 @@ A Unity-based neuro-rehabilitation system designed to improve upper-limb motor c
 ---
 
 ## 🖼️ Project UI Preview
-👉 (Attach Image 1 – UI/UX Interface)
 
-![UI/UX Interface](Images/Screenshot 2026-02-23 181322.png)
+![UI/UX Interface](https://github.com/akash-2301/VR-Garden-Rehab/raw/7c04b431efea9bcaeb6885806f42ae2b9b474b02/Images/Screenshot%202026-02-23%20181322.png)
 
 ---
 
@@ -35,9 +34,8 @@ It integrates RealSense-based hand tracking, multi-stage therapy tasks, adaptive
 ---
 
 ## ✋ How Calibration Works
-👉 (Attach Image 2 – Hand Calibration)
 
-![Hand Calibration](path/to/image2.png)
+![Hand Calibration](https://github.com/akash-2301/VR-Garden-Rehab/raw/7c04b431efea9bcaeb6885806f42ae2b9b474b02/Images/Screenshot%202026-02-23%20181439.png)
 
 Calibration is done once using four hand positions:
 
@@ -56,9 +54,8 @@ These RealSense points are mapped to Unity’s screen space to determine persona
 ---
 
 ## 🎮 Gameplay Summary
-👉 (Attach Image 3 – Stages Showcase)
 
-![Stages](path/to/image3.png)
+![Stages](https://github.com/akash-2301/VR-Garden-Rehab/raw/7c04b431efea9bcaeb6885806f42ae2b9b474b02/Images/Screenshot%202026-02-23%20183947.png)
 
 Each stage activates certain objects. The user must pick only the correct ones.
 
@@ -75,9 +72,8 @@ Each stage activates certain objects. The user must pick only the correct ones.
 ---
 
 ## 🐝 Stages With Bee Constraints
-👉 (Attach Image 4 – Bee Constraint Stages)
 
-![Bee Stages](path/to/image4.png)
+![Bee Stages](https://github.com/akash-2301/VR-Garden-Rehab/blob/7c04b431efea9bcaeb6885806f42ae2b9b474b02/Images/Screenshot%202026-02-23%20182934.png)
 
 Bees sit on specific objects to block selection.
 
@@ -88,6 +84,8 @@ Bees sit on specific objects to block selection.
 ---
 
 ## 🧠 Performance Factor Logic
+
+![Performance Logic](https://github.com/akash-2301/VR-Garden-Rehab/raw/7c04b431efea9bcaeb6885806f42ae2b9b474b02/Images/Screenshot%202026-02-24%20170152.png)
 
 ### **1️⃣ Performance Factor (PF)**  
 
