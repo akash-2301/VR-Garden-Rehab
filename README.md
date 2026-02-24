@@ -4,7 +4,7 @@ A Unity-based neuro-rehabilitation system designed to improve upper-limb motor c
 
 ---
 
-## 🖼️ Project UI Preview
+## 🖼️ UI Preview
 
 ![UI/UX Interface](https://github.com/akash-2301/VR-Garden-Rehab/raw/7c04b431efea9bcaeb6885806f42ae2b9b474b02/Images/Screenshot%202026-02-23%20181322.png)
 
